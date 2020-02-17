@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Immersive' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.1.xsd'>
+  <head>
+    <meta content="px3d4-8.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta
+      content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2006" name="rights"/>
+    <meta
+      content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta
+      content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+  </head>
+  <Scene>
+    <Viewpoint description='Transformed texture window' position='1 -1 8'/>
+    <Background groundColor='0 0 0' skyAngle='1.309 1.571' skyColor='0 0.2 0.7 0 0.5 1 1 1 1'/>
+	<Group>
+    <Transform translation='0 0 0' scale='1.5 1.0 1.5'>
+      <Shape>
+        <Appearance>
+          <!-- no material, use emissive texturing. Not really a video, just a .jpg image. -->
+          <ImageTexture DEF='Video' url='"258.jpg"'/>
+        </Appearance>
+        <IndexedFaceSet DEF='Screen' coordIndex='0 1 2 3' solid='false' texCoordIndex='0 1 2 3'>
+          <Coordinate point='0 0 0 1 0 0 1 1 0 0 1 0'/>
+          <TextureCoordinate point='0 0 0.5 0 0.5 0.5 0 0.5'/>
+        </IndexedFaceSet>
+      </Shape>
+      <Transform translation='1.1 0 0'>
+        <Shape>
+          <Appearance>
+            <!-- no material, use emissive texturing -->
+            <ImageTexture USE='Video'/>
+            <TextureTransform scale='1 1' translation='0.5 0'/>
+          </Appearance>
+          <IndexedFaceSet USE='Screen'/>
+        </Shape>
+      </Transform>
+      <Transform translation='0 1.1 0'>
+        <Shape>
+          <Appearance>
+            <ImageTexture USE='Video'/>
+            <TextureTransform scale='1 1' translation='0 0.5'/>
+          </Appearance>
+          <IndexedFaceSet USE='Screen'/>
+        </Shape>
+      </Transform>
+      <Transform translation='1.1 1.1 0'>
+        <Shape>
+          <Appearance>
+            <ImageTexture USE='Video'/>
+            <TextureTransform scale='1 1' translation='0.5 0.5'/>
+          </Appearance>
+          <IndexedFaceSet USE='Screen'/>
+        </Shape>
+      </Transform>
+    </Transform>
+	<Transform scale='0.35 0.35 0.35' translation='-0.5 0 1.5'>
+			<Inline url='"px3d4-8-0.x3d"' bboxCenter='0 0.1621 0' bboxSize='0.6 4.3242 0.6'/>
+		</Transform>
+	<Transform scale='0.35 0.35 0.35' translation='1.5 -0.39 2'>
+			<Inline url='"biben.x3d"' bboxCenter='0 0.1621 0' bboxSize='0.6 4.3242 0.6'/>
+		</Transform>
+	<Anchor url='"http://shop63163459.taobao.com/"'>
+		<Transform translation='1.4 -0.2 1.62' scale="0.1 0.1 0.1" rotation="1 0 0 -0.354">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='1.0 0.0 0.2'>
+						</Material>
+					</Appearance>
+					<Text containerField="geometry" string='"1. X3D WELCOME to Internet  "' solid='false' size="1" length="8">
+						<FontStyle containerField="fontStyle" family='"TYPEWRITER"' horizontal='true' justify='"MIDDLE"' leftToRight='true' style="BOLD">
+						</FontStyle>
+					</Text>
+				</Shape>
+			</Transform>
+	</Anchor>
+	<Anchor url="http://jiuqiu.tmall.com/shop/viewShop.htm">
+		<Transform translation='1.4 -0.4 1.7' scale="0.1 0.1 0.1" rotation="1 0 0 -0.354">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='1.0 0.0 0.2'>
+						</Material>
+					</Appearance>
+					<Text containerField="geometry" string='"2. X3D WELCOME to Internet "' solid='false' size="1" length="8">
+						<FontStyle containerField="fontStyle" family='"TYPEWRITER"' horizontal='true' justify='"MIDDLE"' leftToRight='true' style="BOLD">
+						</FontStyle>
+					</Text>
+				</Shape>
+			</Transform>
+	</Anchor>
+	<Transform translation='1.38 -0.45 1.7' scale="0.1 0.1 0.1" rotation="1 0 0 -0.354">
+				<Shape>
+					<Appearance>
+						<ImageTexture DEF='Video' url='"20.jpg"'/>
+					</Appearance>
+					<Box size="10.5 7.8 0.01"/>
+				</Shape>
+			</Transform>
+	
+    </Group>
+	<Group DEF="_Group">
+		
+		<Transform scale='0.005 0.005 0.005' translation='1 -0.9 2'>
+			<Inline url='"zhuozi.x3d"' bboxCenter='0 0.1621 0' bboxSize='0.6 4.3242 0.6'/>
+		</Transform>
+	</Group>
+  </Scene>
+</X3D>

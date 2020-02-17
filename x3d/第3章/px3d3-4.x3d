@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<X3D profile="Immersive" version="3.0">
+	<head>
+	<meta content="px3d3-4.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+	</head>
+	<Scene>
+		<Background DEF="_1" skyColor='1 1 1'>
+		</Background>
+		<WorldInfo DEF="_2">
+		</WorldInfo>
+		<NavigationInfo DEF="_3" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		<Transform DEF="_4" translation='-2.149768 4 -2.112515'>
+			<Shape DEF="_5">
+				<Appearance DEF="_6">
+					<Material DEF="_7">
+					</Material>
+					<ImageTexture DEF="_8" url='"m3698.jpg"'>
+					</ImageTexture>
+				</Appearance>
+				<Box DEF="_9" size='10 10 10'>
+				</Box>
+			</Shape>
+		</Transform>
+	</Scene>
+</X3D>

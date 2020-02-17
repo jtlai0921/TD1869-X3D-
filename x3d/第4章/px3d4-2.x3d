@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d4-2.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter reference citation or relative/online url here*' name='reference'/>
+        <meta content='*enter additional url/bibliographic reference information here*' name='reference'/>
+        <meta content='*enter reference resource here if required to support function, delivery, or coherence of content*' name='requires'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2008' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="1 1 1"/>
+	<Group  DEF='group-1'>   
+	<Transform translation="0 0 0" scale="0.5 0.65 0.5 ">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="1 0 0"
+            shininess="0.15" specularColor="0.8 0.8 0.8"/>
+        </Appearance>
+        <Sphere radius="3"/>
+      </Shape>
+    </Transform>
+    <Transform translation="0 0 0" scale="0.5 1 0.5">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="3.9" radius="1" side="true" top="true"/>
+      </Shape>
+    </Transform>
+	</Group>
+
+	<Transform  scale='1 1 1' translation='0 -4.5 0' >
+            <Group USE="group-1"/>
+    </Transform>
+	<Transform  scale='1 1 1' translation='0 4.5 0' >
+            <Group USE="group-1"/>
+    </Transform>
+    <Transform translation="0 0 0" scale="0.5 1 0.5">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="16" radius="0.1" side="true" top="true"/>
+      </Shape>
+    </Transform>
+  </Scene>
+</X3D>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d4-7.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter reference citation or relative/online url here*' name='reference'/>
+        <meta content='*enter additional url/bibliographic reference information here*' name='reference'/>
+        <meta content='*enter reference resource here if required to support function, delivery, or coherence of content*' name='requires'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="1 1 1"/>
+	<Group DEF="group-1">
+	<Transform scale='1 1 1' rotation='0 1 0 1.571'>
+	<Transform rotation='1 0 0 0.262'>
+	<Transform scale='1 0.8 1' translation='0 4 0'>
+			<Shape DEF="sp">
+				<Appearance>
+					<Material ambientIntensity='0.4' diffuseColor='0.3 0.2 0.6' shininess='0.2' specularColor='0.7 0.7 0.6' transparency='0'>
+					</Material>
+				</Appearance>
+				<Box size='2.6 0.3 0.3'>
+				</Box>
+			</Shape>
+		</Transform>
+		<Transform translation='-1.0 0 0'>
+			<Shape DEF="cyl">
+				<Appearance>
+					<Material ambientIntensity='0.4' diffuseColor='0.5 0.5 0.7' shininess='0.2' specularColor='0.8 0.8 0.9' transparency='0'>
+					</Material>
+				</Appearance>
+				<Cylinder bottom='true' height='8' radius='0.15' side='true' top='true'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0 0 0 0' scale='1 1 1' translation='1.0 0 0'>
+			<Shape USE="cyl"/>
+		</Transform>
+		<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<Transform translation='0 3 0' rotation='0 0 1 1.571'>
+			<Shape DEF="cyll">
+				<Appearance>
+					<Material ambientIntensity='0.4' diffuseColor='0.5 0.5 0.7' shininess='0.2' specularColor='0.8 0.8 0.9' transparency='0'>
+					</Material>
+				</Appearance>
+				<Cylinder bottom='true' height='2.0' radius='0.15' side='true' top='true'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0 0 1 1.571' scale='1 1 1' translation='0 2 0'>
+			<Shape USE="cyll"/>
+		</Transform>
+		<Transform rotation='0 0 1 1.571' scale='1 1 1' translation='0 1 0'>
+			<Shape USE="cyll"/>
+		</Transform>
+		<Transform rotation='0 0 1 1.571' scale='1 1 1' translation='0 0 0'>
+			<Shape USE="cyll"/>
+		</Transform>
+		<Transform rotation='0 0 1 1.571' scale='1 1 1' translation='0 -1 0'>
+			<Shape USE="cyll"/>
+		</Transform>
+		<Transform rotation='0 0 1 1.571' scale='1 1 1' translation='0 -2 0'>
+			<Shape USE="cyll"/>
+		</Transform>
+		<Transform rotation='0 0 1 1.571' scale='1 1 1' translation='0 -3 0'>
+			<Shape USE="cyll"/>
+		</Transform>
+	</Transform>
+	</Transform>
+	</Group>
+	<Transform rotation='0 0 1 0' scale='1 1 1' translation='2.5 0 0'>
+		<Transform rotation='0 0 1 0.524'>
+			<Group USE="group-1"/>
+		</Transform>
+	</Transform>
+
+	<Transform scale='1 0.8 1' translation='1.25 3.9 0' rotation='0 1 0 1.571'>
+			<Shape DEF="sp">
+				<Appearance>
+					<Material ambientIntensity='0.4' diffuseColor='0.3 0.2 0.6' shininess='0.2' specularColor='0.7 0.7 0.6' transparency='0'>
+					</Material>
+				</Appearance>
+				<Box size='2.6 0.1 0.3'>
+				</Box>
+			</Shape>
+		</Transform>
+  </Scene>
+</X3D>

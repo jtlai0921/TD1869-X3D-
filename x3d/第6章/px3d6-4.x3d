@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">	
+<X3D profile="Immersive"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+   <head>
+    <meta content="px3d6-4.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    
+  </head>
+   <Scene>
+      <Viewpoint description="DirectionalLight shining parallel rays to right.  No location, light source is infinitely distant." position="0 0 30"/>
+      <NavigationInfo headlight="false" type='"EXAMINE" "ANY"'/>
+      <Background skyColor="0.58 0.58 0.58"/>
+      <Group>
+         <SpotLight color="1 1 0" location="5 0 5" direction="-12 0 -20"/>
+	<Transform translation="-8 0 -8">
+         <Inline  url="px3d6-4-1.x3d"/>
+	</Transform>
+      </Group>
+   </Scene>
+</X3D>

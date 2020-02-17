@@ -1,0 +1,10 @@
+<Transform scale="0.7 0.7 0.7">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="0.2 0.2 0.8"/>
+		</Appearance>
+		<IndexedTriangleFanSet index="0 1 2 3 -1, 0 4 5 3 -1" solid="false">
+		<Coordinate point="0 8 0, -4.5 0 0, -0.5 0 0, 0 0 -3, 4.5 0 0, 0.5 0 0"/>
+		</IndexedTriangleFanSet>
+	</Shape>
+</Transform>

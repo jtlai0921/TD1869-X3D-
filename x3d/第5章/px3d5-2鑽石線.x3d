@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "http://www.web3d.org/specifications/x3d-3.1.dtd"
+                     "file:///www.web3d.org/TaskGroups/x3d/translation/x3d-3.1.dtd">
+<!--Warning:  transitional DOCTYPE in source .x3d file-->
+<X3D profile="Immersive" version="3.1"
+  xmlns:xsd="http://www.w3.org/2015/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.1.xsd">
+  <head>
+    <meta content="px3d5-2.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+  </head>
+  <Scene>
+    <Background skyColor="0.98 0.98 0.98"/>
+   <Group>
+    <Shape>
+      <Appearance>
+        <Material  diffuseColor="0 0 0"/>
+      </Appearance>
+      <IndexedLineSet coordIndex="
+      0,1,2,3,4,5,0,-1,&#10;
+      6,7,8,9,10,11,6,-1,&#10;
+
+      6,12,-1,&#10;
+      7,12,-1,&#10;
+      8,12,-1,&#10;
+      9,12,-1,&#10;
+      10,12,-1,&#10;
+      11,12,-1,&#10;
+
+      6,0,-1,&#10;
+      7,1,-1,&#10;
+      8,2,-1,&#10;
+      9,3,-1,&#10;
+      10,4,-1,&#10;
+      11,5,-1,&#10;
+      ">
+
+      <Coordinate point="
+      0,2,1,&#10;
+      -1.732,1,1,&#10;
+      -1.732,-1,1,&#10;
+      0,-2,1,&#10;
+      1.732,-1,1,&#10;
+      1.732,1,1,&#10;
+
+      0,4,0,&#10;
+      -3.464,2,0,&#10;
+      -3.464,-2,0,&#10;
+      0,-4,0,&#10;
+      3.464,-2,0,&#10;
+      3.464,2,0,&#10;
+
+      0,0,-3,0,&#10;
+
+      
+      "/>
+      </IndexedLineSet>
+    </Shape>
+    </Group>
+  </Scene>
+</X3D>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<X3D profile='Immersive' version='3.2'>
+    <head>
+        <meta content="px3d10-4.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="0.65 0.65 0.86"/>
+    <Viewpoint description="viewpoint1" orientation="0 0 1 0" position="0 3.0 25"/>
+    <!-- hengliang -->
+     <Transform   rotation="0 0 1 0"  translation="0 4 0" >
+     <Transform  DEF='Trans-1' rotation="0 0 1 0" scale="0.8 1 0.8" translation="0.95 3.5 0" >
+		<Shape>
+    	  <Appearance>
+        	<Material ambientIntensity="0.4" diffuseColor="1.0 1.0 1.0"
+            shininess="0.2" specularColor="0.8 0.8 0.9" />
+    	  </Appearance>
+			<Box size='11.9 0.4 0.7'/>
+    	</Shape >
+	 </Transform>
+     <Transform   rotation="0 0 1 0"  translation="0 3.0 0" >
+		<Transform USE='Trans-1'/>
+	 </Transform>
+     <Transform   rotation="0 0 1 0"  translation="0 -13.0 0" >
+		<Transform USE='Trans-1'/>
+	 </Transform>
+     <!-- shuliang -->
+     <Transform  DEF='Trans-2' rotation="0 0 1 0" scale="0.8 1 0.8" translation="-3.65 -1.5 0" >
+		<Shape>
+    	  <Appearance>
+        	<Material ambientIntensity="0.4" diffuseColor="1.0 1.0 1.0"
+            shininess="0.2" specularColor="0.8 0.8 0.9" />
+    	  </Appearance>
+			<Box size='0.4 16 0.7'/>
+    	</Shape >
+	 </Transform>
+
+     <Transform   rotation="0 0 1 0"  translation="9.2 0.0 0" >
+		<Transform USE='Trans-2'/>
+	 </Transform>
+      <Transform  rotation="0 0 1 0" scale="0.8 1 0.8" translation="0.95 5 0" >
+		<Shape>
+    	  <Appearance>
+        	<Material ambientIntensity="0.4" diffuseColor="0.0 1.0 0.2"
+            shininess="0.2" specularColor="0.2 0.8 0.2" transparency="0.6"/>
+    	  </Appearance>
+			<Box size='11 3 0.2'/>
+    	</Shape >
+	 </Transform>
+     <!-- Text -->
+     <Transform   rotation="0 0 1 0"  translation="0.0 8.0 0" >
+     	<Shape>
+		<!--Add a single geometry node here-->
+            <Appearance>
+                <Material ambientIntensity="0.4" diffuseColor="1.0 1.0 0.2"
+            shininess="0.2" specularColor="0.2 0.8 0.2" />
+            </Appearance>
+            <Text length='20' maxExtent='20' solid='false' string='VR/AR-X3D-Open-Door'>
+                <FontStyle justify='"MIDDLE" "MIDDLE"' style='BOLDITALIC'/>
+            </Text>
+        </Shape>
+      </Transform>
+
+     <!-- open windows1 -->
+      
+	<Transform DEF="fan-cylind1" scale="1 1 1" translation="5.3 0.0 0.0" rotation="1 0 0 0">
+        	<Inline url="px3d10-2-1.x3d"/>
+       		 <CylinderSensor DEF="cylins1" autoOffset="true"
+          		diskAngle="0.26179167" enabled="true" maxAngle="1.571"
+         		 minAngle="-1.571" offset="0.524"/>
+      	</Transform>
+	<ROUTE fromField="rotation_changed" fromNode="cylins1" toField="set_rotation" toNode="fan-cylind1"/>
+
+     <!-- open windows2 -->
+
+	<Transform DEF="fan-cylind2" scale="1 1 1" translation="-3.4 0.0 0.0" rotation="1 0 0 0">
+        	<Inline url="px3d10-2-2.x3d"/>
+       		 <CylinderSensor DEF="cylins2" autoOffset="true"
+          		diskAngle="0.26179167" enabled="true" maxAngle="-1"
+         		 minAngle="0" offset="1.571"/>
+      	</Transform>
+	<ROUTE fromField="rotation_changed" fromNode="cylins2" toField="set_rotation" toNode="fan-cylind2"/>
+
+
+     </Transform>
+
+    
+    
+  </Scene>
+</X3D>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<X3D version='3.2' profile='Immersive' >
+  <head>
+    <meta content="clock.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2008" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta content="X3D-Edit" name="generator"/>
+
+  </head>
+  <Scene>
+  
+      <!--TimeSensor DEF='cm' cycleInterval='1' enabled='false' loop='true'/-->
+      <Background skyColor="1 1 1"/>
+      <Viewpoint description='Viewpoint-1' position='0 0 10'/>
+      <Transform  rotation="0 0 1 0" scale="5 5 5" translation="0 -1 0">
+      <Inline url='Clock-1.gif'/>
+      </Transform >
+
+      <TimeSensor DEF='refresh' cycleInterval='0.1' loop='true'/>
+     
+      <Script DEF='writing'>
+        <field accessType='inputOnly' name='set_float' type='SFTime'/>
+        <field accessType='outputOnly' name='string_changed' type='MFString'/>
+        <field accessType='initializeOnly' name='g' type='SFFloat' value='0'/>
+        <![CDATA[ecmascript:
+		function set_float () {
+ 			var today = new Date();
+ 			var date = today.toLocaleString();
+ 			string_changed[0]= date;
+		}]]>
+      </Script>
+      <Transform translation='0 2.58 0.3'>
+        <Shape>
+          <Appearance>
+            <Image url='M100.jpg'/>
+          </Appearance>
+          <Text DEF='text'>
+            <FontStyle justify='MIDDLE' size='1'/>
+          </Text>
+        </Shape>
+      </Transform>
+
+    <ROUTE fromField='cycleTime_changed' fromNode='refresh' toField='set_float' toNode='writing'/>
+    <ROUTE fromField='string_changed' fromNode='writing' toField='set_string' toNode='text'/>
+  </Scene>
+</X3D>

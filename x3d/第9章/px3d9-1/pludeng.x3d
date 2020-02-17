@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile="Immersive" version="3.2">
+	<head>
+	<meta content="pludeng.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2008" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+	</head>
+	<Scene>
+		<Transform rotation='-0.0662227 0.997245 0.0334211 1.35944' scale='0.178659 0.178659 0.178659' translation='27.3172 13.5296 1.42138'>
+		</Transform>
+		<Transform translation='-11.9767 -18.1443 2.20578'>
+			<Transform DEF="_0" center='-1.45 -0.688503 3' rotation='0.98134 0.19122 -0.0201577 3.14945' scale='0.178659 0.178659 0.178659' translation='13.0727 21.9813 -5.62915'>
+				<Shape>
+					<Appearance>
+						<Material DEF="_1" emissiveColor='0.49 0.49 0.49'>
+						</Material>
+					</Appearance>
+					<Extrusion containerField="geometry" DEF="_2" convex='false' creaseAngle='0.785' crossSection='0.05 1,0.05 -1,-0.05 -1,-0.05 1,0.05 1' orientation='0 0 1 0' scale='1 1' solid='false' spine='-3 -2.2 0,-2 -1.6 0,-1 -1 0,-0.81 -0.9 0,-0.64 -0.8 0,-0.49 -0.7 0,-0.36 -0.6 0,-0.25 -0.5 0,-0.16 -0.4 0,-0.09 -0.3 0,-0.04 -0.2 0,-0.01 -0.1 0,0 0 0,0 0.8 0'>
+					</Extrusion>
+				</Shape>
+			</Transform>
+		</Transform>
+		<Transform rotation='6.08609e-006 1 -9.32944e-005 0.0410802' scale='0.178659 0.178659 0.178659' translation='-0.0988051 2.73488 -0.13232'>
+			<Transform DEF="_3" rotation='0.621479 0.621479 -0.476999 2.25144' scale='1 1 1' scaleOrientation='0 0 1 0' translation='0.55 2.38715 1.98017'>
+				<Shape>
+					<Appearance>
+						<Material USE="_1"/>
+					</Appearance>
+					<Cylinder containerField="geometry" height='0.8' radius='0.02'>
+					</Cylinder>
+				</Shape>
+			</Transform>
+		</Transform>
+		<Transform rotation='-0.00531937 0.96588 -0.258936 3.18128' scale='0.17866 0.178659 0.178659' translation='0.128404 2.96528 0.636308'>
+			<Transform USE="_3"/>
+		</Transform>
+		<Transform rotation='0.987824 0.154248 -0.0202782 0.264735' scale='0.17866 0.178659 0.17866' scaleOrientation='0 0 1 0' translation='-0.109918 2.84093 -0.433138'>
+			<Transform USE="_3"/>
+		</Transform>
+		<Transform rotation='9.2073e-010 -1 -2.33509e-007 1.26792' scale='0.17866 0.178659 0.178659' translation='7.71763e-010 0.915108 0.08897'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" height='19' radius='0.5'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0.988555 2.12658e-006 -0.150864 3.1416' scale='0.17866 0.17866 0.178659' translation='0.00293415 2.6578 0.0997748'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cone containerField="geometry" bottomRadius='0.7'>
+				</Cone>
+			</Shape>
+		</Transform>
+		<Transform rotation='1.24872e-005 1 -1.73783e-005 0.302868' scale='0.17866 0.178659 0.178659' scaleOrientation='0 0 1 0' translation='0.00393549 2.2439 0.0995444'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" radius='0.6'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='1.24872e-005 1 -1.73783e-005 0.302868' scale='0.17866 0.178659 0.178659' scaleOrientation='0 0 1 0' translation='0.00393496 1.85091 0.0994843'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" radius='0.6'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='1.24872e-005 1 -1.73783e-005 0.302868' scale='0.17866 0.178659 0.178659' scaleOrientation='0 0 1 0' translation='0.00393549 1.4578 0.0995241'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" radius='0.6'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0.80569 -2.1801e-006 0.592337 3.14159' scale='0.178659 0.178659 0.178659' translation='0.00393391 1.0648 0.0994745'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" radius='0.6'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0.80569 -2.1801e-006 0.592337 3.14159' scale='0.178659 0.178659 0.178659' translation='0.00393474 0.671805 0.0995146'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" radius='0.6'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0.80569 -2.1801e-006 0.592337 3.14159' scale='0.178659 0.178659 0.178659' translation='0.00393491 0.278706 0.0994943'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" radius='0.6'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='2.26762e-007 -1 -2.22296e-007 1.26792' scale='0.17866 0.178659 0.178659' translation='0.0142093 2.92723 0.198667'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" height='1' radius='0.04'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='-6.26201e-011 1 -2.96045e-010 3.14159' scale='1 1 1' scaleOrientation='-0.00729388 0.0113605 0.999909 3.92698' translation='11.9985 -18.1459 -2.00939'>
+			<Transform USE="_0"/>
+		</Transform>
+		<Transform rotation='2.40046e-005 1 1.41439e-005 0.302884' scale='0.25 0.25 0.25' scaleOrientation='-0.5835 0.701694 -0.408844 1.92796' translation='0.0029335 2.5584 0.0997749'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" height='0.8' radius='0.4'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform rotation='0.000186736 1 7.94106e-005 0.041086' scale='0.324192 0.324192 0.324192' scaleOrientation='-0.5835 0.701694 -0.408844 1.92796' translation='0.0064786 2.91895 -0.00647933'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" height='0.5' radius='0.02'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Viewpoint DEF="_4" fieldOfView='0.785398' orientation='-0.999969 -0.00759174 -0.00195256 0.503291' position='1.10844 11.1701 12.609'>
+		</Viewpoint>
+		<Transform translation='0 -0.146045 0.1'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" height='0.4' radius='0.102'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform translation='0 -0.58077 0.102'>
+			<Shape>
+				<Appearance>
+					<Material USE="_1"/>
+				</Appearance>
+				<Cylinder containerField="geometry" height='0.4' radius='0.102'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+	</Scene>
+</X3D>

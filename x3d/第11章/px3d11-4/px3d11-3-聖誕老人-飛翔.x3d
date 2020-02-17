@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<X3D profile='Immersive' version='3.2' >
+    <head>
+        <meta content="px3d11-4.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="1 1 1"/>
+    <Transform  rotation="0 1 0 1.571" scale="6 4 6" translation="0 10 -20">
+        <Inline url="sdkl-11.gif"/>
+    </Transform>
+    <Transform  rotation="0 1 0 1.571" scale="0.1 0.1 0.1" translation="0 -10 -20">
+        <Inline url="song.x3d"/>
+    </Transform>
+
+    <!-- Color -->
+    <Transform DEF='TreeColor0' translation="-2 -9 -5" rotation='1 0 0 0.524'>
+    <Transform DEF='Color0'>
+    <Transform translation="2 2 -20"  scale="0.25 0.25 0.25" >
+	<Shape>
+		<Appearance>
+			<Material  DEF='My_Color0' diffuseColor="1.0 0.2 0.2"/>
+		</Appearance>
+	<Sphere radius='1.8' />
+	</Shape>
+    </Transform>
+    <Transform translation="2 0 -20"  scale="0.25 0.25 0.25"  >
+	<Shape>
+		<Appearance>
+			<Material  DEF='My_Color1' diffuseColor="1.0 0.2 0.2"/>
+		</Appearance>
+	<Sphere radius='1.8' />
+	</Shape>
+    </Transform>
+    <ColorInterpolator DEF='Animation0' key='0.0 0.25 0.5 0.75 1' keyValue='0.2 0.8 0.8 ,1 0 0 ,0 1 0 ,0 0 1 ,1.0 0.2 0.2'/>
+    <ColorInterpolator DEF='Animation1' key='0.0 0.25 0.5 0.75 1' keyValue='1 0 0,0.2 0.8 0.8  ,0 1 0 ,1.0 0.2 0.2,0 0 1 '/>
+    <TimeSensor DEF='TimeSource' cycleInterval='5.0' loop='true'/>
+
+    <ROUTE fromNode='TimeSource' fromField='fraction_changed' toNode='Animation0' toField='set_fraction'></ROUTE>
+    <ROUTE fromNode='Animation0' fromField='value_changed' toNode='My_Color0' toField='set_diffuseColor'></ROUTE>
+    <ROUTE fromNode='TimeSource' fromField='fraction_changed' toNode='Animation1' toField='set_fraction'></ROUTE>
+    <ROUTE fromNode='Animation1' fromField='value_changed' toNode='My_Color1' toField='set_diffuseColor'></ROUTE>
+    </Transform>
+    <Transform translation="0 -8 0" rotation='0 1 0 0'>
+	<Transform USE='Color0'/>
+    </Transform>
+     <Transform translation="0 -4 0" rotation='0 1 0 0'>
+	<Transform USE='Color0'/>
+    </Transform>
+     <Transform translation="0 2 0" rotation='0 1 0 0'>
+	<Transform USE='Color0'/>
+    </Transform>
+     </Transform>
+    <Transform translation="0 17.5 -2" rotation='1 0 0 -0.885' >
+ 	<Transform USE='TreeColor0' />
+    </Transform>
+     <Transform translation="0 12 0" rotation='1 0 1 -0.785' >
+ 	<Transform USE='TreeColor0' />
+    </Transform>
+    <Transform translation="-19.5 0.5 -20" rotation='0 1 0 -1.571' >
+ 	<Transform USE='TreeColor0' />
+    </Transform>
+    <!-- Color color0 -->
+    <Transform translation="0 6.5 -20"  scale="0.25 0.25 0.25" >
+	<Shape>
+		<Appearance>
+			<Material  DEF='My_Color' diffuseColor="1.0 0.2 0.2"/>
+		</Appearance>
+	<Sphere radius='1.8' />
+	</Shape>
+    </Transform>
+     <ColorInterpolator DEF='Animation' key='0.0 0.25 0.5 0.75 1' keyValue='1 0 0 ,0 1 0 ,0 0 1 ,0.2 0.8 0.8 ,1.0 0.2 0.2'/>
+    <TimeSensor DEF='Time' cycleInterval='5.0' loop='true'/>
+    <ROUTE fromNode='Time' fromField='fraction_changed' toNode='Animation' toField='set_fraction'></ROUTE>
+    <ROUTE fromNode='Animation' fromField='value_changed' toNode='My_Color' toField='set_diffuseColor'></ROUTE>
+
+     <Transform  rotation="0 1 0 1.571" scale="8.5 7 8.5" translation="12.5 -6.5 -20">
+        <Inline url="sdkl-22.gif"/>
+    </Transform>
+    <Group>
+      <Transform DEF="Christmas_fly" rotation="0 1 0 1.571" scale="2.5 2.5 2.5" translation="0 0 -">
+        <Inline url="Christmas.gif"/>
+        <TimeSensor DEF="time1" cycleInterval="10.0" loop="true"/>
+        <PositionInterpolator DEF="Position_flyinter"
+          key="0.0 ,0.1,0.2,0.3,0.4,0.5,0.6,0.8,0.9,1.0," keyValue="-5 -5 0, -2 -2 0,0 0 0,2 2 0,4 4 0,&#10;6 6 0,8 8 0,10 10 0,12 10 0,14 12 0"/>
+      </Transform>
+    </Group>
+    <ROUTE fromField="fraction_changed" fromNode="time1"
+      toField="set_fraction" toNode="Position_flyinter"/>
+    <ROUTE fromField="value_changed" fromNode="Position_flyinter"
+      toField="set_translation" toNode="Christmas_fly"/>
+    
+  </Scene>
+</X3D>

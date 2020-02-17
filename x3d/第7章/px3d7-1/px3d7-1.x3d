@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2010/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d5-4.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="1 1 1"/>
+	<Viewpoint description='Viewpoint-1' position='8 8 35'/>
+    	<Viewpoint description='Viewpoint-2' orientation="0 1 0 1.571" position='55 8 10' />
+	<Viewpoint description='Viewpoint-3' orientation="0 1 0 -1.571" position='-55 18 10' />
+	<Transform DEF="Eleva1" translation="-10 0 -10" scale="2.6 2 2.0">
+	<Shape>
+      		<Appearance>
+			<ImageTexture url="mount.jpg"/>
+      		</Appearance>
+      		<ElevationGrid creaseAngle="5.0"
+        	height="0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 2.5 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.5 3.0 1.0 0.5 0.0 0.0 0.0 0.0 0.5 2.0 4.5 2.5 1.0 1.5 0.0 0.0 2.5 3.0 4.5 5.5 3.5 3.0 1.0 0.0 0.0 2.0 2.0 2.5 3.5 4.0 2.0 0.5 0.0 0.0 0.0 0.5 1.5 1.0 2.0 3.0 1.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 2.0 1.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0"
+        	solid="false" xDimension="9" zDimension="9"/>
+    	</Shape>
+	</Transform>	
+	<Transform translation="20 0 -4" rotation="0 1 0 3.141" >
+		<Transform USE="Eleva1"/>
+	</Transform>
+    <Transform DEF="proad1" rotation="0 1 0 1.571" scale="1 1 1" translation="0 0 11">
+      <Shape>
+        <Appearance>
+          <ImageTexture url="road1.png"/>
+        </Appearance>
+        <Box size="10 0.5 20"/>
+      </Shape>
+    </Transform>
+    <Transform translation="20 0 0">
+		<Transform USE="proad1"/>
+	</Transform>
+
+   
+	<Transform  translation="-4 1.8 5">
+	 <Billboard DEF="Tree-888">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="Tree.png"/>
+          </Appearance>
+          <Box size="4 5 0"/>
+        </Shape>
+	</Billboard>
+
+	</Transform>
+      	<Transform translation="1 5 5">
+		<Inline url="Tr1.x3db"/>
+	</Transform>
+
+	<Transform translation="1 1.8 5">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+	<Transform translation="-8 1.8 5">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+	<Transform translation="13 1.8 5">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+	<Transform translation="23 1.8 5">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+	<Transform translation="28 1.8 5">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+	<Transform translation="10 15 0 ">
+    	    <Shape>
+      		<Appearance>
+        		<Material ambientIntensity="0.1" diffuseColor="0.8 0.2 0.2"
+         		 shininess="0.15"  transparency="0"/>
+      		</Appearance>
+      		<Text length="18.0" maxExtent="18.0" string="Scene_text:Viewpoint_nodes">
+        	<FontStyle family="&quot;SANS&quot;"
+          justify="&quot;MIDDLE&quot;,&quot;MIDDLE&quot;" size="2.0" style="BOLDITALIC"/>
+      </Text>
+    </Shape>
+    </Transform>
+  </Scene>
+</X3D>

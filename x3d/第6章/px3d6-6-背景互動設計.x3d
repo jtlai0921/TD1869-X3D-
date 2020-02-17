@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.w3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2010/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d6-6.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Group>
+      <Background groundAngle='1.309 1.571' groundColor='0.1 0.1 0 0.4 0.25 0.2 0.6 0.6 0.6' skyAngle='1.309 1.571' skyColor='0 0.2 0.7 0 0.5 1 1 1 1'/>
+      <Background DEF='AlternateBackground1' groundAngle='1.309 1.571' groundColor='0.1 0.1 0 0.5 0.25 0.2 0.6 0.6 0.2' skyAngle='1.309 1.571' skyColor='1 0 0 1 0.4 0 1 1 0'/>
+    </Group>
+    <!-- Shapes to act as buttons -->
+    <Transform translation='-2 0 0'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='1 0 0'/>
+        </Appearance>
+        <Sphere radius="0.5"/>
+      </Shape>
+      <TouchSensor DEF='TouchSphere' description='Alternate reddish-orange background'/>
+    </Transform>
+    <ROUTE fromField='isActive' fromNode='TouchSphere' toField='set_bind' toNode='AlternateBackground1'/>
+	
+    <Background DEF='BoxBackground1' frontUrl="m3698.jpg" backUrl="m3698.jpg" leftUrl="m3698.jpg"
+	rightUrl="m3698.jpg"  topUrl="m3698.jpg" bottomUrl="m3698.jpg"/>
+    
+    <!-- Shapes to act as buttons -->
+    <Transform translation='2 0 0'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='0 1 0'/>
+        </Appearance>
+        <Box size="1 1 1"/>
+      </Shape>
+      <TouchSensor DEF='TouchBox' description='Alternate reddish-orange background-front'/>
+    </Transform>
+    <ROUTE fromField='isActive' fromNode='TouchBox' toField='set_bind' toNode='BoxBackground1'/>
+  </Scene>
+</X3D>

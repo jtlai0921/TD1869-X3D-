@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
+                     "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile="Immersive" version="3.2" >
+    <head>
+    <meta content="px3d4-8-2.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2010" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+  </head>
+  <Scene>
+    <Background skyColor="0.98 0.98 0.98"/>
+    <WorldInfo info="an introductory scene" title="zjz-zjr-zjd"/>
+    <Viewpoint description="zjz-zjr-zjd" orientation="0 1 0 3.14159" position="0 0 -8"/>
+    
+    
+<Group DEF="MiniWorld">
+    <Transform DEF="EarthCoordinateSystem">
+      
+    	<Transform bboxCenter="0 0 0" bboxSize="-1 -1 -1" center="0 0 0"
+    		rotation="0 1 0 0.524" scale="1 1 1" translation="0 0 0">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="&quot;./earth.jpg&quot; "/>
+          </Appearance>
+          <Sphere radius="1.5"/>
+        </Shape>
+    	</Transform>
+    </Transform> 
+    
+    <TimeSensor DEF="OrbitalTimeInterval" cycleInterval="12.0" loop="true"/>
+    <OrientationInterpolator DEF="SpinThoseThings"
+      key="0.00 0.25 0.50 0.75 1.00" keyValue="0 1 0 0, 0 1 0 1.5708, 0 1 0 3.14159, 0 1 0 4.7123889, 0 1 0 6.2831852"/>
+    <ROUTE fromField="fraction_changed" fromNode="OrbitalTimeInterval"
+      toField="set_fraction" toNode="SpinThoseThings"/>
+    <ROUTE fromField="value_changed" fromNode="SpinThoseThings"
+      toField="rotation" toNode="EarthCoordinateSystem"/>
+
+	<Transform bboxCenter="0 0 0" bboxSize="-1 -1 -1" center="0 0 0"
+       scale="1 1 1" translation="0 0 0">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="0.2 0.2 0.8"
+            shininess="0.15" specularColor="0.8 0.8 0.8" transparency="0.2"/>
+        </Appearance>
+        <Cylinder height="3.5" radius="0.05" top='false' bottom='false' side='true' />
+      </Shape>
+    </Transform>
+    </Group>
+    
+  </Scene>
+</X3D>

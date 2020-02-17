@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="3.2">
+	<head>
+	<meta content="px3d6-1.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta
+      content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta
+      content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    
+
+	</head>
+	<Scene>
+		<NavigationInfo DEF="_NavigationInfo" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		<Viewpoint DEF="_Viewpoint" fieldOfView='1.5' description="wide view">
+		</Viewpoint>
+		<Background DEF="_Background" groundAngle='0.1,1.309,1.571' groundColor='0 0 0,0 0.1 0.3,0 0.2 0.5,0 0.3 0.8' backUrl='"lake_1_back.jpg"' bottomUrl='"lake_1_bottom.jpg"' frontUrl='"lake_1_front.jpg"' leftUrl='"lake_1_left.jpg"' rightUrl='"lake_1_right.jpg"' topUrl='"lake_1_top.jpg"' skyAngle='0.1,0.15,1.309,1.571' skyColor='0.4 0.4 0.1,0.4 0.4 0.1,0 0.1 0.3,0 0.2 0.6,0.8 0.8 0.8'>
+		</Background>
+		<Transform scale='2 2 2' translation='4 8 -8'>
+			<Inline url='"x3d.x3d"' bboxCenter='0.04 -0.1369 0' bboxSize='26.94 2.1862 0.2'/></Transform>
+		<Transform scale='1 1 1' translation='8 0 -8'>
+			<Anchor description="call second program" url='"tianyuanfengguanquanjing1.x3d"' bboxCenter='8 4 -8' bboxSize='50 50 50'>
+				<Inline url='"tianyuanfengguan.x3d"'/></Anchor>
+		</Transform>
+		<Transform scale='1 1 1' translation='8 -4 -8'>
+			<Anchor description="call second program" url='"shenlinquanjing2.x3d"' bboxCenter='8 0 -8' bboxSize='50 50 50'>
+				<Inline url='"shenlinquanjing.x3d"' bboxCenter='-0.0265002 -0.11935 0' bboxSize='13.441 2.1513 0.2'/></Anchor>
+		</Transform>
+	</Scene>
+</X3D>

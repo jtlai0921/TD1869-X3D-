@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="3.0">
+	<head>
+        <meta content="px3d10-5.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+        </head>
+	<Scene>
+		<Background groundAngle='1.309 1.571' groundColor='1.0 0.1 0 0.4 0.25 0.2 1.0  1.0 1.0' skyAngle='1.309 1.571' skyColor='0 0.2 0.7 0 0.5 1 1 1 1'/>
+      
+		<ExternProtoDeclare name="KeySensor" url="urn:inet:bitmanagement.de:node:KeySensor">
+			<field accessType="inputOutput" name="eventsProcessed" type="SFBool"/>
+			<field accessType="inputOutput" name="enabled" type="SFBool"/>
+			<field accessType="outputOnly" name="isActive" type="SFBool"/>
+			<field accessType="outputOnly" name="keyPress" type="SFInt32"/>
+			<field accessType="outputOnly" name="keyRelease" type="SFInt32"/>
+			<field accessType="outputOnly" name="actionKeyPress" type="SFInt32"/>
+			<field accessType="outputOnly" name="actionKeyRelease" type="SFInt32"/>
+			<field accessType="outputOnly" name="shiftKey_changed" type="SFBool"/>
+			<field accessType="outputOnly" name="controlKey_changed" type="SFBool"/>
+			<field accessType="outputOnly" name="altKey_changed" type="SFBool"/>
+			<field accessType="outputOnly" name="character" type="SFString"/>
+			<field accessType="inputOutput" name="metadata" type="SFNode"/>
+		</ExternProtoDeclare>
+		<Viewpoint DEF="_1" fieldOfView='0.716' position='0 1 50'>
+		</Viewpoint>
+		 <Transform   rotation="0 0 1 0"  translation="0.0 16.0 0" >
+     			<Shape>
+			<!--Add a single geometry node here-->
+            		<Appearance>
+                		<Material ambientIntensity="0.4" diffuseColor="1.0 1.0 0.2"
+            			shininess="0.2" specularColor="0.2 0.8 0.2" />
+           		 </Appearance>
+            		<Text length='50' maxExtent='50' solid='false' string='VR/AR-X3D-Click-the-"A"-or-"D"-about-mobile 3D-objects-to-achieve-interactive-design
+
+'>
+                		<FontStyle justify='"MIDDLE" "MIDDLE"' style='BOLDITALIC' size='3.0'/>
+            		</Text>
+        		</Shape>
+      		</Transform>
+		<Transform DEF="Tr_Sphere">
+		<Transform  translation='0 4.8 0'>
+			<Shape>
+				<Appearance>
+					<Image url='33333.jpg'/>
+				</Appearance>
+				<Sphere containerField="geometry" radius="3.0" >
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform  translation='0 -1 0'>
+			<Shape>
+				<Appearance>
+					<Image url='44444.jpg'/>
+				</Appearance>
+				<Cone  bottomRadius='3' height='6'/>
+				
+			</Shape>
+		</Transform>
+		<Transform  translation='0 -8 0'>
+			<Shape>
+				<Appearance>
+					<Image url='44444.jpg'/>
+				</Appearance>
+				<Box size='12 8 8' containerField="geometry" >
+				</Box>
+			</Shape>
+		</Transform>
+		</Transform>
+		<Transform  translation='0 -12 0'>
+			<Shape>
+				<Appearance>
+					<Image url='fool.jpg'/>
+				</Appearance>
+				<Box size='80 0.2 25' containerField="geometry" >
+				</Box>
+			</Shape>
+		</Transform>
+		<KeySensor DEF="KeyA-D" eventsProcessed='false' enabled='true'>
+		</KeySensor>
+		<TimeSensor DEF="Time-Clock" loop='true'>
+		</TimeSensor>
+		<Script DEF="scr" mustEvaluate='true'>
+			<field accessType="initializeOnly" name="cone" type="SFNode">
+				<Transform USE="Tr_Sphere"/>
+			</field>
+			<field accessType="initializeOnly" name="speed" type="SFFloat" value='0'/>
+			<field accessType="initializeOnly" name="direction" type="SFVec3f" value='1 0 0'/>
+			<field accessType="initializeOnly" name="acceleration" type="SFFloat" value='0'/>
+			<field accessType="initializeOnly" name="f" type="SFFloat" value='0'/>
+			<field accessType="inputOnly" name="pressed" type="SFInt32"/>
+			<field accessType="inputOnly" name="release" type="SFInt32"/>
+			<field accessType="inputOnly" name="tick" type="SFTime"/>
+			<field accessType="initializeOnly" name="lastTick" type="SFTime" value='1305027972.429831'/>
+			<field accessType="initializeOnly" name="key" type="SFInt32" value='0'/>
+	<!--A=65 D=68 -->
+			<![CDATA[ javascript:
+function tick(t){
+   if(!lastTick)   {    lastTick=t;    return;   }
+   deltaT = t-lastTick;
+   if(key==68){    acceleration=3;   }
+   else if(key==65)   {    acceleration=-3;   }
+   else     acceleration=0;
+   if(speed>0.5)f=-1;
+   else if(speed<-0.5)f=1;
+   else {    f=0;   }
+   speed +=(acceleration+f)*deltaT;
+   cone.translation=cone.translation.add(direction.multiply(speed*deltaT));
+   lastTick=t;
+}
+function pressed(k){   key=k; }
+function release(k){    key=0; }
+]]>
+		</Script>
+		<ROUTE fromNode="KeyA-D" fromField="keyPress_changed" toNode="scr" toField="pressed"/>
+		<ROUTE fromNode="KeyA-D" fromField="keyRelease_changed" toNode="scr" toField="release"/>
+		<ROUTE fromNode="Time-Clock" fromField="time_changed" toNode="scr" toField="tick"/>
+	</Scene>
+</X3D>

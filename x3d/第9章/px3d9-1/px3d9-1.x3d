@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile="Immersive" version="3.2">
+	<head>
+	<meta content="px3d9-1.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    
+	</head>
+	<Scene>
+		<DirectionalLight DEF="_1" ambientIntensity='1' color='1 1 1' direction='0 -1 0' intensity='0' on='true' global='true'>
+		</DirectionalLight>
+		<Background DEF="_2" skyAngle='1.309,1.571,1.571' skyColor='1 1 1,0.2 0.2 1,1 1 1,1 1 1'>
+		</Background>
+		<Viewpoint DEF="_1" orientation='0 1 0 -0.785' position='22 2 2' description="camera1">
+		</Viewpoint>
+		<Viewpoint DEF="_2" orientation='0 1 0 -2.571' position='22 2 -20' description="camera2">
+		</Viewpoint>
+		<Viewpoint DEF="_3" orientation='0 1 0 -3.841' position='112 2 -88' description="camera3">
+		</Viewpoint>
+		<Viewpoint DEF="_4" orientation='1 0 0 -1.571' position='100 100 -40' description="camera4">
+		</Viewpoint>
+
+		<NavigationInfo DEF="_6" avatarSize='0.5,55,6' headlight='true' speed='1' type='"WALK","ANY"'>
+		</NavigationInfo>
+		<TimeSensor DEF="T1" cycleInterval='50' loop='true' startTime='0' stopTime='-1'>
+		</TimeSensor>
+		<PositionInterpolator DEF="PI_1" key='0,1' keyValue='1 4 22,112 0 -88'>
+		</PositionInterpolator>
+		<Viewpoint DEF="VP_1" orientation='0 1 0 -0.785' position='97.975 0.505405 -74.1014' description="AutoNavigation-1">
+		</Viewpoint>
+		<Group DEF="_7">
+			<Background skyColor='0.2 0.3 0.6'>
+			</Background>
+			<Transform DEF="man1" rotation='0 1 0 2.30' scale='0.1 0.1 0.1' translation='27 20 -5'>
+				<Inline DEF="_8" url='"pwalk-1.x3d"' bboxCenter='-0.0113494 0.880689 0.043156' bboxSize='0.52406 1.74603 0.651141'>
+				</Inline>
+			</Transform>
+			<TimeSensor DEF="Time" cycleInterval='18' loop='true'>
+			</TimeSensor>
+			<PositionInterpolator DEF="walk1" key='0,0.2,0.4,0.6,0.8,1' keyValue='27 2.4 -5,35 2.4 -10,56 2.4 -35,112 2.4 -88,120 2.4 -88,130 2.4 -88,'>
+			</PositionInterpolator>
+		</Group>
+		<Group DEF="_9">
+			<Background skyColor='0.2 0.3 0.6'>
+			</Background>
+			<Transform DEF="man2" rotation='0 1 0 2.30' scale='0.1 0.1 0.1' translation='30 8 -5'>
+				<Inline DEF="_10" url='"pwalk-2.x3d"' bboxCenter='-0.0113494 0.880689 0.043156' bboxSize='0.52406 1.74603 0.651141'>
+				</Inline>
+			</Transform>
+			<TimeSensor DEF="Time_1" cycleInterval='22' loop='true'>
+			</TimeSensor>
+			<PositionInterpolator DEF="walk2" key='0,0.2,0.4,0.6,0.8,1' keyValue='30 2.4 -5,40 2.4 -15,60 2.4 -15,118 2.4 -15,120 2.4 -35,130 2.4 -35,'>
+			</PositionInterpolator>
+		</Group>
+		<Transform rotation='0 1 0 -0.785' scale='1.5 1.5 1.4' translation='52 -0.03 4'>
+			<Inline DEF="_11" url='"pguiha-005.x3d"' bboxCenter='-0.0137992 1.35195 -8.20235' bboxSize='24.6124 2.7039 21.1093'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -0.785' scale='1 1 1' translation='80 -0.1 -40'>
+			<Inline DEF="_12" url='"prxd1-2.x3d"' bboxCenter='0 0 0' bboxSize='150 0.1 150'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -0.785' scale='1.5 1.5 1.5' translation='78 0 -22'>
+			<Inline DEF="_13" url='"pguiha-005.x3d"' bboxCenter='-0.0137992 1.35195 -8.20235' bboxSize='24.6124 2.7039 21.1093'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -0.785' scale='1.51 1.5 1.5' translation='105 0 -48.5'>
+			<Inline DEF="_14" url='"pguiha-005.x3d"' bboxCenter='-0.0137992 1.35195 -8.20235' bboxSize='24.6124 2.7039 21.1093'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -3.926' scale='1.78 1.5 1.5' translation='31 0 -51'>
+			<Inline DEF="_15" url='"pguiha-005.x3d"' bboxCenter='-0.0137992 1.35195 -8.20235' bboxSize='24.6124 2.7039 21.1093'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -3.926' scale='1.78 1.5 1.5' translation='57.5 0 -77.5'>
+			<Inline DEF="_16" url='"pguiha-005.x3d"' bboxCenter='-0.0137992 1.35195 -8.20235' bboxSize='24.6124 2.7039 21.1093'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -3.926' scale='1.78 1.5 1.5' translation='84 0 -104'>
+			<Inline DEF="_17" url='"pguiha-005.x3d"' bboxCenter='-0.0137992 1.35195 -8.20235' bboxSize='24.6124 2.7039 21.1093'>
+			</Inline>
+		</Transform>
+		<Transform rotation='0 1 0 -2.356' scale='1.8 1.8 1.8' translation='83.5 2 -35'>
+			<Inline DEF="_18" url='"diaoxiang1.x3d"' bboxCenter='0 0.525 0' bboxSize='1.5 3.05 2.48982'>
+			</Inline>
+		</Transform>
+		<!--ROUTE fromNode="T1" fromField="fraction_changed" toNode="PI_1" toField="set_fraction"/-->
+		<!--ROUTE fromNode="PI_1" fromField="value_changed" toNode="VP_1" toField="set_position"/-->
+		<ROUTE fromNode="Time" fromField="fraction_changed" toNode="walk1" toField="set_fraction"/>
+		<ROUTE fromNode="walk1" fromField="value_changed" toNode="man1" toField="set_translation"/>
+		<ROUTE fromNode="Time_1" fromField="fraction_changed" toNode="walk2" toField="set_fraction"/>
+		<ROUTE fromNode="walk2" fromField="value_changed" toNode="man2" toField="set_translation"/>
+	</Scene>
+</X3D>

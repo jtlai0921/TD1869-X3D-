@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.w3d.org/specifications/x3d-3.0.dtd"><X3D version='3.0' profile='Immersive' xmlns:xsd='http://www.w3.org/2010/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.w3d.org/specifications/x3d-3.0.xsd'>  
+	<head>    
+	 <meta content="px3d6-7.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+	</head>  
+	<Scene> 
+	<Background DEF="_1" groundAngle='1.57079' groundColor='0.1 0.8 0.1,0.25 0.25 0.25' skyAngle='0.2,1.57079' skyColor='1 1 0,1 1 1,0.25 0.25 0.25'>
+		</Background>   
+	<Viewpoint description='DeskLamp' position='2 2 65'/>    
+	<Group>      
+	<!-- ***** lamp ***** -->     
+	    <Transform  translation='2 0.015 -5' scale="0.1 0.1 0.1"> 
+		<Inline url="lmap.x3d"/>   
+	    </Transform> 
+	              
+	<TimeSensor DEF='clock1' cycleInterval='0.5'/>                      
+		<ColorInterpolator DEF='colorpath1' key='0, 1' keyValue='0.4 0.4 0.4, 1 1 0'/>                      
+		<ColorInterpolator DEF='colorpath2' key='0, 1' keyValue='0.4 0.4 0.4, 0.4 0.4 0.4'/>                      
+	<TimeSensor DEF='clock2' cycleInterval='0.5'/>                      
+		<SpotLight DEF='light' ambientIntensity='.8' beamWidth='0.785398' color='1 1 0' cutOffAngle='1.785398' direction='0 -1 0.7' on='false' radius='20'/> 
+            	            
+	</Group> 
+       
+	<Group> 
+	 <!-- ***** button1 ***** -->         
+	    <Transform DEF='button1' translation='0.0 -6.0 -6.4' salse="12 12 12">            
+		<Shape>              
+			<Appearance>                
+				<Material diffuseColor='1 0 0'/>              
+			</Appearance>              
+			<Sphere radius='0.25'/>            
+		</Shape>            
+	    <TouchSensor DEF='touch1' description='click to turn on'/>            
+	    <Script DEF='code1'>              
+		<field accessType='outputOnly' name='value' type='SFBool'/>              
+		<field accessType='inputOnly' name='set_light' type='SFTime'/>              
+		<![CDATA[ecmascript:function set_light() { value = TRUE;}]]>            
+	    </Script>          
+	    </Transform> 
+         <!-- ***** button2 ***** --> 
+	    <Transform DEF='button2' translation='0.0 -7.0 -6.4'>            
+		<Shape>              
+			<Appearance>                
+				<Material diffuseColor='0.8 0.8 0.8'/>              
+			</Appearance>              
+			<Sphere radius='0.25'/>            
+		</Shape>            
+	    <TouchSensor DEF='touch2' description='click to turn off'/>            
+		<Script DEF='code2'>              
+			<field accessType='outputOnly' name='value' type='SFBool'/>              
+			<field accessType='inputOnly' name='set_light' type='SFTime'/>              
+			<![CDATA[ecmascript:function set_light() { value = FALSE;}]]>            
+		</Script>          
+	    </Transform>     
+	    
+	</Group> 
+   
+	   
+	
+	<ROUTE fromField='touchTime' fromNode='touch1' toField='set_startTime' toNode='clock1'/>    
+	<ROUTE fromField='fraction_changed' fromNode='clock1' toField='set_fraction' toNode='colorpath1'/>    
+	<ROUTE fromField='value_changed' fromNode='colorpath1' toField='set_emissiveColor' toNode='color2'/> 
+   
+	<ROUTE fromField='touchTime' fromNode='touch2' toField='set_startTime' toNode='clock2'/>    
+	<ROUTE fromField='fraction_changed' fromNode='clock2' toField='set_fraction' toNode='colorpath2'/>    
+	<ROUTE fromField='value_changed' fromNode='colorpath2' toField='set_emissiveColor' toNode='color2'/> 
+   
+	<ROUTE fromField='touchTime' fromNode='touch1' toField='set_light' toNode='code1'/>    
+	<ROUTE fromField='value' fromNode='code1' toField='set_on' toNode='light'/>    
+	<ROUTE fromField='touchTime' fromNode='touch2' toField='set_light' toNode='code2'/>    
+	<ROUTE fromField='value' fromNode='code2' toField='set_on' toNode='light'/> 
+	<Transform  translation='-0.02 -9 0.05' scale="0.08 0.08 0.08"> 
+		<Inline url="zhuozi.x3d"/>       
+	    </Transform>  
+	</Scene>
+</X3D>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d7-4.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="1 1 1"/>
+    <Viewpoint description='Viewpoint-1' position='2 1 10'/>
+    <Viewpoint description='Viewpoint-2' orientation='0 1 0 0.57' position='5 -1 5'/>
+    <NavigationInfo type='"WALK" "EXAMINE" "ANY"'/>
+	<Group>
+      <Sound direction='0 0 -1' maxBack='20' minBack='10'  minFront='50' maxFront='80'>
+        <AudioClip description='will' loop='true'  url='"soundred1.wav"  '/>
+      </Sound>
+	 
+      <!-- sound 1-2 --> 
+      <Transform  DEF="Tran" >
+      <Transform   scale='1 1 1' translation='-1 0 0'>
+        <Shape DEF='MinMarker'>
+          <Sphere radius='0.25'/>
+          <Appearance>
+            <ImageTexture url="sound-1.png"/>
+          </Appearance>
+		  <Box size='4 4 0.001'/>
+        </Shape>
+      </Transform>
+	<Transform  scale='1 1 1' translation='5 0 0'>
+        <Shape DEF='MinMarker'>
+          <Sphere radius='0.25'/>
+          <Appearance>
+            <ImageTexture url="sound-2.png"/>
+          </Appearance>
+		  <Box size='4 4 0.001'/>
+        </Shape>
+      </Transform>
+      </Transform>
+	<Transform  scale='1.8 1.8 1.8' translation='-1 5 -25' >
+		<Transform USE="Tran"/>
+	</Transform>
+	<Transform  scale='2 2 2' translation='-1 25 -80' >
+		<Transform USE="Tran"/>
+	</Transform>
+    </Group>
+    
+  </Scene>
+</X3D>

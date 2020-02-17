@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<X3D profile="Immersive" version="3.0">
+	<head>
+	<meta content="px3d5-5.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+	</head>
+	<Scene>
+		<NavigationInfo DEF="_1" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		<Background DEF="_2" skyColor='0.98 0.98 0.98'>
+		</Background>
+		<Transform DEF="_3" rotation='0 1 0 0.758' translation='6 3 6'>
+			<Viewpoint DEF="_4" orientation='1 0 0 -0.2' position='0 0 0' description="Extruded room with a doorway">
+			</Viewpoint>
+		</Transform>
+		<Shape DEF="Shape_Extrusion">
+			<Appearance>
+				 <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7" shininess="0.2" specularColor="0.8 0.8 0.9"/>
+				
+			</Appearance>
+			<Extrusion containerField="geometry" convex='false' crossSection='0 0,0 2,1 2,1 1,2 1,2 2,3 2,3 0,0 0' solid='false' spine='0 0 0,0 2 0'>
+			</Extrusion>
+		</Shape>
+		<Transform  rotation='0 1 0 -3.141' translation='3 0 3'>
+			<Shape USE="Shape_Extrusion"/>
+		</Transform>
+	</Scene>
+</X3D>

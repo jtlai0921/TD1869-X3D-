@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile="Immersive" version="3.2">
+	<head>
+	<meta content="pguihua-005.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2008" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+	</head>
+	<Scene>
+		<NavigationInfo DEF="_1" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		<Transform DEF="wan90" rotation='0 1 0 -1.781' translation='10 0 0'>
+			<Shape>
+				<Appearance>
+					<Material diffuseColor='0.5 0.55 0.5'>
+					</Material>
+				</Appearance>
+				<Extrusion containerField="geometry" convex='false' creaseAngle='0.785' crossSection='0 0,0 0.2,1 0.2,1 0' solid='false' spine='1 0 0,0.92 0 -0.38,0.71 0 -0.71,0.38 0 -0.92,0 0 -1,-0.38 0 -0.92'>
+				</Extrusion>
+			</Shape>
+		</Transform>
+		<Transform DEF="Heng1" rotation='0 1 0 -1.571' translation='0 0.1 1.48'>
+			<Shape DEF="_2">
+				<Appearance>
+					<Material diffuseColor='0.5 0.55 0.5'>
+					</Material>
+				</Appearance>
+				<Box containerField="geometry" DEF="_3" size='1 0.2 19.58'>
+				</Box>
+			</Shape>
+		</Transform>
+		<Transform DEF="Sh1" translation='11.47 0.1 -8.18'>
+			<Shape>
+				<Appearance>
+					<Material diffuseColor='0.5 0.55 0.5'>
+					</Material>
+				</Appearance>
+				<Box containerField="geometry" size='1 0.2 16'>
+				</Box>
+			</Shape>
+		</Transform>
+		<Transform rotation='0 1 0 -1.581' translation='-9.85 0 -10'>
+			<Transform USE="wan90"/>
+		</Transform>
+		<Transform rotation='0 0 0 0' translation='-22.9 0 -0.045'>
+			<Transform USE="Sh1"/>
+		</Transform>
+		<Transform rotation='0 1 0 -3.142' translation='0.05 0 -16.4'>
+			<Transform USE="wan90"/>
+		</Transform>
+		<Transform rotation='0 1 0 -0.002' translation='0 0 -19.35'>
+			<Transform USE="Heng1"/>
+		</Transform>
+		<Transform rotation='0 1 0 -4.6813' translation='10.3 0 -6.35'>
+			<Transform USE="wan90"/>
+		</Transform>
+		<Transform rotation='1 0 0 0' translation='0 0.1 -8'>
+			<Shape>
+				<Appearance>
+					<ImageTexture url='"image/grass3.jpg"'>
+					</ImageTexture>
+					<TextureTransform containerField="textureTransform" scale='6 6'>
+					</TextureTransform>
+				</Appearance>
+				<IndexedFaceSet coordIndex='0,1,2,3,0,-1' solid='true'>
+					<Coordinate point='11 0 9,11 0 -9.5,-11 0 -9.5,-11 0 9'>
+					</Coordinate>
+				</IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='10 0.8 0'>
+			<Inline DEF="_4" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='5 0.8 0'>
+			<Inline DEF="_5" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='0 0.8 0'>
+			<Inline DEF="_6" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='-5 0.8 0'>
+			<Inline DEF="_7" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='-10 0.8 0'>
+			<Inline DEF="_8" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='10 0.8 -16.5'>
+			<Inline DEF="_9" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='5 0.8 -16.5'>
+			<Inline DEF="_10" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='0 0.8 -16.5'>
+			<Inline DEF="_11" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='-5 0.8 -16.5'>
+			<Inline DEF="_12" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.5 0.55 0.5' translation='-10 0.8 -16.5'>
+			<Inline DEF="_13" url='"ptree1.x3d"' bboxCenter='0 0 0' bboxSize='2 2.8 0.00138107'>
+			</Inline>
+		</Transform>
+		<Transform DEF="_14" scale='0.8 0.6 0.8' translation='-10 0.6 -15'>
+			<Inline DEF="_15" url='"pludeng.x3d"' bboxCenter='0.0108965 1.36217 0.0981806' bboxSize='1.43021 4.28865 0.414959'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.8 0.6 0.6' translation='-10 0.6 -12'>
+			<Inline DEF="_16" url='"pludeng.x3d"' bboxCenter='0.0108965 1.36217 0.0981806' bboxSize='1.43021 4.28865 0.414959'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.8 0.6 0.6' translation='-10 0.6 -5'>
+			<Inline DEF="_17" url='"pludeng.x3d"' bboxCenter='0.0108965 1.36217 0.0981806' bboxSize='1.43021 4.28865 0.414959'>
+			</Inline>
+		</Transform>
+		<Transform scale='0.8 0.6 0.6' translation='-10 0.6 -2'>
+			<Inline DEF="_18" url='"pludeng.x3d"' bboxCenter='0.0108965 1.36217 0.0981806' bboxSize='1.43021 4.28865 0.414959'>
+			</Inline>
+		</Transform>
+	</Scene>
+</X3D>

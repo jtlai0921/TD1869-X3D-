@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<X3D profile='Immersive' version='3.2' >
+    <head>
+        <meta content="px3d10-3.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor="1 1 1"/>
+    <Transform translation="0 4.1 0" >
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="0.2" radius="5.2" side="true" top="true"/>
+      </Shape>
+    </Transform>
+     <Transform translation="4.8 4 0" >
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="16" radius="0.3" side="true" top="true"/>
+      </Shape>
+    </Transform>
+    <Group>
+      <Transform DEF="fan" scale="1 1 1" translation="0 0 0">
+        <Inline url="px3d10-3-1.x3d"/>
+        <CylinderSensor DEF="cylins" autoOffset="true"
+          diskAngle="0.26179167" enabled="true" maxAngle="-1"
+          minAngle="0" offset="1.571"/>
+      </Transform>
+    </Group>
+    <Transform translation="0 -4.1 0" >
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="0.2" radius="5.2" side="true" top="true"/>
+      </Shape>
+    </Transform>
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+     <Transform translation="-4.8 4 0" >
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="16" radius="0.3" side="true" top="true"/>
+      </Shape>
+    </Transform>
+    <Group DEF='geoup-z'>
+    <Transform translation="-13.8 4 0" >
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Cylinder bottom="true" height="16" radius="0.3" side="true" top="true"/>
+      </Shape>
+    </Transform>
+    <Transform DEF='x-11' translation="-9.5 0 0" rotation="0 1 0 0">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.4" diffuseColor="0.2 0.8 0.2"
+            shininess="0.2" specularColor="0.8 0.8 0.9"  transparency="0.5"/>
+        </Appearance>
+        <Box size='9 8 0.2'/>
+      </Shape>
+    </Transform>
+    <Transform DEF='x-1' translation="-9.5 -4.1 0" rotation="0 1 0 0">
+      <Shape>
+        <Appearance>
+         <Material ambientIntensity="0.4" diffuseColor="0.5 0.5 0.7"
+            shininess="0.2" specularColor="0.8 0.8 0.9"/>
+        </Appearance>
+        <Box size='9.2 0.2 0.58'/>
+      </Shape>
+    </Transform>
+    <Transform translation="0 8.2 0"  rotation="0 1 0 0">
+	<Transform USE='x-1'/>
+     </Transform>
+     <Transform translation="0 16.2 0"  rotation="0 1 0 0">
+	<Transform USE='x-1'/>
+     </Transform>
+    <Transform translation="0 8.2 0"  rotation="0 1 0 0">
+	<Transform USE='x-11'/>
+     </Transform>
+    </Group>
+    <Transform translation="0 0 0"  rotation="0 1 0 3.141">
+	<Group USE='geoup-z'/>
+     </Transform>
+    <Transform translation="9.5 8.2 0"  rotation="0 1 0 0">
+	<Transform USE='x-11'/>
+     </Transform>
+    <Transform translation="11.5 16.2 0"  rotation="0 1 0 0"  scale="1.2 1 1">
+	<Transform USE='x-1'/>
+     </Transform>
+
+    <ROUTE fromField="rotation_changed" fromNode="cylins"
+      toField="set_rotation" toNode="fan"/>
+  </Scene>
+</X3D>

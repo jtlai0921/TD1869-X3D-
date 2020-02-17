@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile="Immersive"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.1.xsd">
+   <head>
+    <meta content="px3d4-5.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    <meta content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+   </head>
+   <Scene>
+      <Background skyColor="0.98 0.98 0.98"/>
+	  <NavigationInfo type='"EXAMINE" "ANY"'/>
+      <!--Viewpoint description="Cafe sign Billboard entry view" orientation="1 0 0 -0.2" position="0 2 15"/--><!--Nesting a Viewpoint inside a Transform is a good way to precisely compose rotations about 2 different axes-->
+      <Transform rotation="0 1 0 2.75" translation="5 1.5 -15">
+         <!--Viewpoint description="Cafe sign Billboard view from corner" orientation="1 0 0 -0.2"/-->
+      </Transform>
+
+      <Billboard>
+         <Transform translation="0 -1.5 0">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="2.png"/>
+          </Appearance>
+          <Box size="4.5 3 0"/>
+        </Shape>
+      </Transform>
+      </Billboard>
+
+	
+	<Billboard>
+         <Transform translation="-1 -1.6 4">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="22.png"/>
+          </Appearance>
+          <Box size="4.5 3 0"/>
+        </Shape>
+      </Transform>
+      </Billboard>
+
+	<Billboard DEF="tree-33">
+         <Transform translation="-2 -1.5 -4">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="33.png"/>
+          </Appearance>
+          <Box size="3 4 0"/>
+        </Shape>
+      </Transform>
+      </Billboard>
+	<Transform translation="2 0 0">
+		<Billboard USE="tree-33"/>
+	</Transform>
+	<Transform translation="4 0 0">
+		<Billboard USE="tree-33"/>
+	</Transform>
+	<Transform translation="6 0 0">
+		<Billboard USE="tree-33"/>
+	</Transform>
+	<Billboard>
+         <Transform translation="5 -1.5 1">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="11.png"/>
+          </Appearance>
+          <Box size="4.5 3 0"/>
+        </Shape>
+      </Transform>
+      </Billboard>
+
+	
+	<Billboard>
+         <Transform translation="4 -1.5 5">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="111.png"/>
+          </Appearance>
+          <Box size="5 3 0"/>
+        </Shape>
+      </Transform>
+      </Billboard>
+
+	
+	<Billboard DEF="Tree-888">
+	<Transform  translation="-5 -1.2 5">
+        <Shape>
+          <Appearance>
+            <Material/>
+            <ImageTexture url="888.png"/>
+          </Appearance>
+          <Box size="4 5 0"/>
+        </Shape>
+	</Transform>
+      </Billboard>
+
+
+	<Transform translation="0 0 -4">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+	<Transform translation="0 0 -8">
+		<Billboard USE="Tree-888"/>
+	</Transform>
+
+      <Transform  translation="0 -3 0">
+         <Shape>
+            <Appearance >
+               <ImageTexture url="grass-1.jpg"/>
+            </Appearance>
+			<Box size="50 0.1 50"/>
+            
+         </Shape>
+      </Transform>
+   </Scene>
+</X3D>

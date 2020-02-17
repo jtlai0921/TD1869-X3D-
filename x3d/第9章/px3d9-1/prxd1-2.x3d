@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile="Immersive" version="3.2">
+	<head>
+	</head>
+	<Scene>
+		<Transform DEF="lm1">
+			<Shape>
+				<Appearance>
+					<ImageTexture url='"image/1.png"'>
+					</ImageTexture>
+					<TextureTransform containerField="textureTransform" scale='80 80'>
+					</TextureTransform>
+				</Appearance>
+				<Box containerField="geometry" size='150 0.1 150'>
+				</Box>
+			</Shape>
+		</Transform>
+	</Scene>
+</X3D>

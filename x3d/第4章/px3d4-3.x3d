@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d4-3.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2008' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+        <Background skyColor="1 1 1"/>
+        <Transform translation='0.25 -0.05 -0.1'>
+            <Shape>
+                <Appearance>
+                    <Material />
+                    <ImageTexture url='13691.jpg' />
+                </Appearance>
+                <Box size='6.2 4.7 0.01' />
+            </Shape>
+        </Transform>
+        <Transform rotation='0 0 1 0' scale='0.02 0.02 0.02' translation='1 1 -0.5'>
+            <Inline url='phuakuang.x3d' />
+        </Transform>
+        <Transform translation='5 -1.3 0'>
+            <Shape>
+                <Appearance>
+                    <Material  />
+					<ImageTexture url='m3698.jpg' />
+                </Appearance>
+                <Box size='2 2.5 2' />
+            </Shape>
+        </Transform>
+		<Transform translation='-4.5 -1.3 0'>
+            <Shape>
+                <Appearance>
+                    <Material  />
+					<ImageTexture url='m3698.jpg' />
+                </Appearance>
+                <Box size='2 2.5 2' />
+            </Shape>
+        </Transform>
+    </Scene>
+</X3D>

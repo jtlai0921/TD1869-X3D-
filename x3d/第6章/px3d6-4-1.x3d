@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "http://www.w3d.org/specifications/x3d-3.1.dtd"
+                     "file:///www.w3d.org/TaskGroups/x3d/translation/x3d-3.1.dtd">
+<!--Warning:  transitional DOCTYPE in source .x3d file-->
+<X3D profile="Immersive" version="3.1"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.w3d.org/specifications/x3d-3.1.xsd">
+  <head>
+    <meta content="px3d6-4-1.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    
+  </head>
+  <Scene>
+    <Background skyColor="0 0 0"/>
+    <Transform translation="5 0 3" rotation="1 0 0 1.571">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="0 0 1"
+            shininess="0.15" specularColor="0 0 1"/>
+        </Appearance>
+        <Cylinder radius="0.5" height="4"/>
+      </Shape>
+    </Transform>
+
+    <Transform translation="5 0 1.5" rotation="1 0 0 1.571">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="1 0 0"
+            shininess="0.15" specularColor="0.8 0.8 0.8"/>
+        </Appearance>
+        <Cone bottomRadius="0.8" height="3" bottom="false" solid="false"/>
+      </Shape>
+    </Transform>    
+
+    <Transform translation="5 0 0.5">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="4 2 0"
+            shininess="0.15" specularColor="0.8 0.8 0.8" transparency="0.5"/>
+        </Appearance>
+        <Sphere radius="0.4"/>
+      </Shape>
+    </Transform>
+
+    <Transform translation="5 0 -8">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="0.58 0.58 0.58"
+            shininess="0.15" specularColor="0.8 0.8 0.8"/>
+        </Appearance>
+       <Sphere radius="2"/>
+      </Shape>
+    </Transform>
+
+    <Transform translation="8 0 -16">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="0.58 0.58 0.58"
+            shininess="0.15" specularColor="0.8 0.8 0.8"/>
+        </Appearance>
+       <Sphere radius="2"/>
+      </Shape>
+    </Transform>
+
+    <Transform translation="2 0 -16">
+      <Shape>
+        <Appearance>
+          <Material ambientIntensity="0.1" diffuseColor="0.58 0.58 0.58"
+            shininess="0.15" specularColor="0.8 0.8 0.8"/>
+        </Appearance>
+       <Sphere radius="2"/>
+      </Shape>
+    </Transform>
+  </Scene>
+</X3D>

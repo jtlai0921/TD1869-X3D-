@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<X3D profile="Immersive" version="3.0">
+	<head></head>
+	<Scene>
+		<Background DEF="_1" skyColor='0.2 0.5 0.6'>
+		</Background>
+		<Transform scale='2.3 1.6 2.3' translation='0 0 0'>
+			<Shape>
+				<Appearance>
+					<Material ambientIntensity='0.4' diffuseColor='0.25 0.25 0.25' shininess='0.2' specularColor='0.7 0.7 0.6'>
+					</Material>
+					
+				</Appearance>
+				<Sphere radius='1'>
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform scale='4 1 4' translation='0 0 0'>
+			<Shape>
+				<Appearance>
+					<Material ambientIntensity='0.4' diffuseColor='0.35 0.35 0.35' shininess='0.2' specularColor='0.7 0.7 0.6'>
+					</Material>
+				</Appearance>
+				<Sphere radius='1'>
+				</Sphere>
+			</Shape>
+		</Transform>
+	</Scene>
+</X3D>

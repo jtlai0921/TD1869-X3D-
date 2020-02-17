@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="3.2">
+	<head>
+	<meta content="px3d7-3.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2015" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+   
+	</head>
+	<Scene>
+		
+
+		<Background DEF="_Background" skyAngle='1.536,2.021' skyColor='1 1 1,0.98 0.98 0.98,0.2 0.6 0.2'>
+			</Background>
+
+		<Viewpoint DEF="_Viewpoint" jump='false' orientation='0 1 0 -1.571' position='0 -2 -42.5' description="View1">
+		</Viewpoint>
+		<Viewpoint DEF="_Viewpoint_1" jump='false' orientation='0 1 0 -0.2' position='0 0 -5' description="View2">
+		</Viewpoint>
+		<Viewpoint DEF="_Viewpoint_2" jump='false' orientation='0 1 0 -1.571' position='1 0 -52.5' description="view3">
+		</Viewpoint>
+		<!-- ********************** -->
+		
+							 
+							
+		<Transform rotation='0 1 0 -1.571' scale='0.01 0.01 0.01' translation='28.5 -3.2 -58.5'>
+			<Inline url= "lyinxiang.x3d"/>
+		</Transform>
+		<Transform rotation='0 1 0 -1.571' scale='0.01 0.01 0.01' translation='28.5 -3.2 -31.5'>
+			<Inline url="lyinxiang.x3d"/>
+		</Transform>
+		<Transform rotation='0 1 0 -1.571' scale='2.45 2.1 2.45' translation='27.95 0.15 -41.62'>
+			<Inline url="pmovie-1.x3d"/>
+		</Transform>
+
+		<Transform rotation='0 1 0 -1.57' scale='0.25 0.25 0.25' translation='25.5 -3.7 -42.5'>
+			 <Inline url="tvyj.x3d"/>
+		</Transform>
+		<Transform rotation='0 1 0 -1.571' scale='0.01 0.01 0.01' translation='27.4 -7 -49.52'>
+			<Inline url="dianshigui-1.x3d"/>
+		</Transform>
+		<Transform rotation='0 1 0 -1.571' scale='0.25 0.25 0.25' translation='23.4 -5.7 -42.52'>
+			<Inline url="DVDji.x3d"/>
+		</Transform>						 
+								
+	</Scene>
+</X3D>

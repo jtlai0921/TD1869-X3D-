@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile="Immersive" version="3.2">
+	<head>
+	</head>
+	<Scene>
+		<NavigationInfo DEF="_1" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		<Billboard DEF="_2" axisOfRotation='0 1 0'>
+			<Transform DEF="_3" scale='1 1.4 1'>
+				<Shape DEF="_4">
+					<Appearance>
+						<ImageTexture url='"./image/2.gif"'>
+						</ImageTexture>
+					</Appearance>
+					<IndexedFaceSet DEF="_5" coordIndex='0,1,2,3,0,-1' solid='false'>
+						<Coordinate point='-1 -1 0,-1 1 0,1 1 0,1 -1 0'>
+						</Coordinate>
+					</IndexedFaceSet>
+				</Shape>
+			</Transform>
+		</Billboard>
+	</Scene>
+</X3D>

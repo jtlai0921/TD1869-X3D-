@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+    <head>
+        <meta content="px3d4-6.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter reference citation or relative/online url here*' name='reference'/>
+        <meta content='*enter additional url/bibliographic reference information here*' name='reference'/>
+        <meta content='*enter reference resource here if required to support function, delivery, or coherence of content*' name='requires'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+    </head>
+    <Scene>
+    <!-- Scene graph nodes are added here -->
+        <Background skyColor="1 1 1"/>
+	  <Transform translation="0.5 2.8 0 ">
+    		<Shape>
+     			 <Appearance>
+       			 <Material ambientIntensity="0.1" diffuseColor="0.8 0.2 0.2"/>
+     			 </Appearance>
+     		 <Text length="12.0" maxExtent="12.0" string="&quot;X3D欢迎www网上购物！&quot;,&#10;&quot; ">
+        		<FontStyle family="&quot;SANS&quot;"
+         			 justify="&quot;MIDDLE&quot;,&quot;MIDDLE&quot;" size="1.2" style="BOLDITALIC"/>
+      			</Text>
+    		</Shape>
+   	 </Transform>
+	 <Anchor url="px3d4-5/px3d4-5.x3d">
+            <Transform translation='0.25 -0.05 -0.1'>
+                <Shape>
+                    <Appearance>
+                        <Material />
+                        <ImageTexture url='IMG_0232.jpg' />
+                    </Appearance>
+                    <Box size='6.2 4.7 0.01' />
+                </Shape>
+            </Transform>
+            <Transform rotation='0 0 1 0' scale='0.02 0.02 0.02' translation='1 1 -0.5'>
+                <Inline url='phuakuang.x3d' />
+            </Transform>
+	</Anchor>
+        <Anchor url="http://www.chengshiwenhua.com/">
+		<Transform translation='0.5 -3.0 -0.1' scale="0.5 0.5 0.5" rotation="1 0 0 -0.524">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='0.0 0.2 1.0'>
+						</Material>
+					</Appearance>
+					<Text containerField="geometry" string='"1. X3D WELCOME to Internet City Culture"' solid='false' size="5" length="20">
+						<FontStyle containerField="fontStyle" family='"TYPEWRITER"' horizontal='true' justify='"MIDDLE"' leftToRight='true' style="BOLD">
+						</FontStyle>
+					</Text>
+				</Shape>
+			</Transform>
+	</Anchor>
+    
+       
+	<Anchor url="http://jiuqiu.tmall.com/shop/viewShop.htm">
+		<Transform translation='0.5 -3.5 -0.1' scale="0.5 0.5 0.5" rotation="1 0 0 -0.524">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='1.0 1.0 0.2'>
+						</Material>
+					</Appearance>
+					<Text containerField="geometry" string='"2. X3D WELCOME to Internet Shop   "' solid='false' size="5" length="20">
+						<FontStyle containerField="fontStyle" family='"TYPEWRITER"' horizontal='true' justify='"MIDDLE"' leftToRight='true' style="BOLD">
+						</FontStyle>
+					</Text>
+				</Shape>
+			</Transform>
+	</Anchor>
+
+	<Anchor url='"http://shop63163459.taobao.com/"'>
+		<Transform translation='0.5 -4.0 -0.1' scale="0.5 0.5 0.5" rotation="1 0 0 -0.524">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='0.0 1.0 0.2'>
+						</Material>
+					</Appearance>
+					<Text containerField="geometry" string='"3. X3D WELCOME to Internet taobao "' solid='false' size="5" length="20">
+						<FontStyle containerField="fontStyle" family='"TYPEWRITER"' horizontal='true' justify='"MIDDLE"' leftToRight='true' style="BOLD">
+						</FontStyle>
+					</Text>
+				</Shape>
+			</Transform>
+	</Anchor>
+
+	
+    </Scene>
+</X3D>

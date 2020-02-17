@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<X3D version='3.0' profile='Immersive' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>
+  <head>
+     <meta content="px3d8-4.x3d" name="filename"/>
+    <meta content="zjz-zjr-zjd" name="author"/>
+    <meta content="*enter name of original author here*" name="creator"/>
+    <meta content="*enter copyright information here* Example:  Copyright (c) Web3D Consortium Inc. 2006" name="rights"/>
+    <meta content="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" name="identifier"/>
+    
+  </head>
+  <Scene>
+    <Viewpoint description='animatedPlane' position='3 2 40'/>
+    <Background skyColor="0.98 0.98 0.98"/>
+    <Transform rotation='1 0 0 -1.5'>
+      <Shape>
+        <NurbsPatchSurface DEF='NS' containerField='geometry' solid='false' uDimension='5' uOrder='4' uTessellation='50' vDimension='5' vOrder='4' vTessellation='50'>
+          <Coordinate containerField='controlPoint' point='-10 0 0, 0 0 0, -10 0 0, 0 0 0, -10 0 0&#10;
+	                                                   -5 -10 0, -5 -5 2.5, -5 0 15, -5 5 2.5, -5 10 0&#10;
+							   0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0&#10;
+							   6 -10 0, 5 -5 2.5, 5 0 10, 5 5 2.5, 6 10 0&#10;
+							   9 -10 0, 10 -5 0, 10 0 0, 10 5 0, 9 10 0'/>
+        </NurbsPatchSurface>
+        <Appearance>
+          <Material diffuseColor='0 1 1'/>
+        </Appearance>
+      </Shape>
+    </Transform>
+   <Transform translation="3 2 4" scale="0.5 0.5 0.6">
+      <Shape>
+      <Appearance>
+       <Material  diffuseColor="1 0 0"/>
+      </Appearance>
+         <Sphere radius="1.5" />
+      </Shape>
+   </Transform>
+      <Transform translation="3 2 -4" scale="0.5 0.5 0.6">
+      <Shape>
+      <Appearance>
+       <Material  diffuseColor="1 0 0"/>
+      </Appearance>
+         <Sphere radius="1.5"/>
+      </Shape>
+   </Transform>
+   <Transform DEF="Tran" rotation='1 0 0 -1.571' translation="2 0 0">
+      <Shape>
+        <NurbsPatchSurface DEF='NS' containerField='geometry' solid='false' uDimension='5' uOrder='4' uTessellation='40' vDimension='5' vOrder='4' vTessellation='40'>
+          <Coordinate containerField='controlPoint' point='
+ 	  0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0&#10;
+	  -5 -10 0, -5 -5 2.5, -5 0 15, -5 5 2.5, -5 10 0&#10;
+	  0 -10 0, 0 0 0, 0 0 0, 0 0 0, 0 10 0&#10;
+	  5 -10 0, 5 -5 2.5, 5 0 15, 5 5 2.5, 5 10 0&#10;
+	  0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0'/>
+        </NurbsPatchSurface>
+        <Appearance>
+          <Material diffuseColor='0.5 0.5 0.5 '/>
+        </Appearance>
+      </Shape>
+    </Transform>
+    <Transform  rotation='1 0 0 0' translation="-12 -2 0" scale="0.5 0.5 0.5">
+	<Transform USE="Tran"/>
+    </Transform>
+    
+
+
+  </Scene>
+</X3D>

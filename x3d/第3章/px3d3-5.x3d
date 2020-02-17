@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<X3D profile="Immersive" version="3.0">
+	<head>
+	<meta content="px3d3-5.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+	</head>
+	<Scene>
+		<Background DEF="_1" skyColor='1 1 1'>
+		</Background>
+		<WorldInfo DEF="_2">
+		</WorldInfo>
+		<NavigationInfo DEF="_3" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		<Transform DEF="_4" translation='0 8 0'>
+			<Shape DEF="_5">
+				<Appearance DEF="_6">
+					<Material DEF="_7" diffuseColor='0 0 1'>
+					</Material>
+				</Appearance>
+				<Text DEF="_8" string='"X3D&#xe5;&#x9c;&#xb0;&#xe7;&#x90;&#x83;"' solid='false'>
+					<FontStyle DEF="_9" justify='"MIDDLE"' size='2'>
+					</FontStyle>
+				</Text>
+			</Shape>
+		</Transform>
+		<Transform DEF="_10">
+			<Shape DEF="_11">
+				<Appearance DEF="_12">
+					<Material DEF="_13">
+					</Material>
+					<ImageTexture DEF="_14" url='"D0258.jpg"'>
+					</ImageTexture>
+				</Appearance>
+				<Sphere DEF="_15" radius='5'>
+				</Sphere>
+			</Shape>
+		</Transform>
+	</Scene>
+</X3D>

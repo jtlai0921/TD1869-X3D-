@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="3.0">
+	<head>
+	<meta content="px3d4-1.x3d" name="filename"/>
+        <meta content="zjz-zjr-zjd" name="author"/>
+        <meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+        <meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+        <meta content='*enter version here, if any*' name='version'/>
+        <meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2015' name='rights'/>
+
+	</head>
+	<Scene>
+		<Background DEF="_Background" skyColor="0.98 0.98 0.98"/>
+		
+		<WorldInfo DEF="_2">
+		</WorldInfo>
+		<NavigationInfo DEF="_3" type='"EXAMINE","ANY"'>
+		</NavigationInfo>
+		
+		
+		<Transform DEF="_12" scale='1 0.979935 0.9430246' translation='0 -0.25 0'>
+			<Shape DEF="_13">
+				<Appearance DEF="_14">
+					<Material DEF="_15" diffuseColor='1 1 1'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_16">
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform DEF="_17" scale='0.9336199 0.919807 0.8758318' translation='0 0.7595687 0'>
+			<Shape DEF="_18">
+				<Appearance DEF="_19">
+					<Material DEF="_20" diffuseColor='0 0 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_21" radius='0.9'>
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform DEF="_22" rotation='0 -1 0 1.087341' scale='1.273603 1.051332 2.27071' translation='-0.5800716 -1.160632 0.1823755'>
+			<Shape DEF="_23">
+				<Appearance DEF="_24">
+					<Material DEF="_25" diffuseColor='1 0.8352941 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_26" radius='0.2'>
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform DEF="_27" rotation='0 1 0 1.172734' scale='1.181516 0.9508561 2.430656' translation='0.5516598 -1.15837 0.1654074'>
+			<Shape DEF="_28">
+				<Appearance DEF="_29">
+					<Material DEF="_30" diffuseColor='1 0.8509804 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_31" radius='0.2'>
+				</Sphere>
+			</Shape>
+			<Transform DEF="_32" rotation='-1 0 0 0.448' scale='0.2134386 0.2215524 0.2215524' translation='1.322478e-006 1.586354 0.2987285'>
+			</Transform>
+		</Transform>
+		<Transform DEF="_33" scale='0.1272796 0.1926672 0.049989' translation='0.2093166 0.7918138 0.818999'>
+			<Transform DEF="_34" scale='1.048748 0.9878734 1' translation='-2.33263 0 -0.09000778'>
+				<Transform DEF="_35" rotation='0 0 1 0' translation='-0.4208107 0 -0.8393755'>
+					<Shape DEF="_36">
+						<Appearance DEF="_37">
+							<Material DEF="_38" diffuseColor='1 1 1'>
+							</Material>
+						</Appearance>
+						<Sphere DEF="_39">
+						</Sphere>
+					</Shape>
+				</Transform>
+				<Transform DEF="_40" translation='-6.379266 0 -0.7194748'>
+				</Transform>
+				<Transform DEF="_41" rotation='0 0 1 0' scale='1 1 1' translation='-14.40111 0 -0.7194748'>
+				</Transform>
+			</Transform>
+			<Transform DEF="_42" scale='1.00802 1 1' translation='-0.2667397 0 -1.179921'>
+				<Shape DEF="_43">
+					<Appearance DEF="_44">
+						<Material DEF="_45" diffuseColor='1 1 1'>
+						</Material>
+					</Appearance>
+					<Sphere DEF="_46">
+					</Sphere>
+				</Shape>
+			</Transform>
+		</Transform>
+		
+		<Transform DEF="_49" rotation='1 0 0 0.1302125' scale='0.9712724 0.1091001 0.9344133' translation='0.005978299 0.3885307 0.02524016'>
+			<Shape DEF="_50">
+				<Appearance DEF="_51">
+					<Material DEF="_52" diffuseColor='0.8 0 0.01176471'>
+					</Material>
+				</Appearance>
+				<Cylinder DEF="_53" radius='0.85'>
+				</Cylinder>
+			</Shape>
+		</Transform>
+		<Transform DEF="_54" scale='1 1.205935 1' translation='-0.1095254 0.767837 0.7604926'>
+			<Shape DEF="_55">
+				<Appearance DEF="_56">
+					<Material DEF="_57" diffuseColor='0 0 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_58" radius='0.08'>
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform DEF="_59" rotation='1 0 0 0.8068386' scale='0.07399157 0.0862591 0.03153834' translation='0.1635355 0.7311262 0.7637297'>
+			<Shape DEF="_60">
+				<Appearance DEF="_61">
+					<Material DEF="_62" diffuseColor='0 0 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_63">
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform DEF="_64" rotation='-0.7937914 -0.5967279 0.1175205 0.4863839' scale='0.1243597 0.4010295 0.9948069' translation='-0.2882672 -0.07965744 0.9216749'>
+			<Shape DEF="_65">
+				<Appearance DEF="_66">
+					<Material DEF="_67" diffuseColor='0.8 0 0.01176471'>
+					</Material>
+				</Appearance>
+				<Rectangle DEF="_68">
+				</Rectangle>
+			</Shape>
+		</Transform>
+		<Transform DEF="_69" rotation='0 0 -1 0.9374377' scale='0.4587172 0.1671703 0.2369523' translation='1.026341 -0.05473331 0.3174603'>
+			<Transform DEF="_70" translation='-0.0672977 -0.5386481 0'>
+				<Shape DEF="_71">
+					<Appearance DEF="_72">
+						<Material DEF="_73" diffuseColor='0 0 0'>
+						</Material>
+					</Appearance>
+					<Sphere DEF="_74">
+					</Sphere>
+				</Shape>
+			</Transform>
+			<Transform DEF="_75" rotation='0 0 1 1.595435' translation='-3.008415 -11.30003 0'>
+			</Transform>
+		</Transform>
+		<Transform DEF="_76" rotation='0 0 -1 0.5745115' scale='0.1461313 0.4477022 0.2258787' translation='-1.07119 -0.0786608 0.1583965'>
+			<Shape DEF="_77">
+				<Appearance DEF="_78">
+					<Material DEF="_79" diffuseColor='0 0 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_80">
+				</Sphere>
+			</Shape>
+		</Transform>
+		<Transform DEF="_81" scale='0.6349869 0.2037954 0.5680892' translation='0.0364643 0.4500331 0.3615079'>
+			<Shape DEF="_82">
+				<Appearance DEF="_83">
+					<Material DEF="_84" diffuseColor='1 0.8352941 0'>
+					</Material>
+				</Appearance>
+				<Sphere DEF="_85">
+				</Sphere>
+			</Shape>
+		</Transform>
+		
+	</Scene>
+</X3D>
